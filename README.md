@@ -3,9 +3,8 @@
 A new Flutter application.
 
 ## Made with Love By Halim Ghazi
-- Feel free to contact me 
-[MY Email](mailto:halimghazi7@gmail.com)
-
+- Feel free to contact me at anytime
+- [MY Email](mailto:halimghazi7@gmail.com)
 ## Getting Started
 
 This project is a starting point for a Flutter application.

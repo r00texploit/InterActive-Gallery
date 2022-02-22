@@ -35,7 +35,7 @@ class DetailsPage extends StatelessWidget {
                 },
                 likeCount: 0,
                 countBuilder: (int count, bool isLiked, String text) {
-                  var color = isLiked ? Colors.deepPurpleAccent : Colors.grey;
+                  var color = isLiked ? Colors.deepOrangeAccent : Colors.grey;
                   Widget result;
                   if (count == 0) {
                     result = Text(
@@ -67,6 +67,9 @@ class DetailsPage extends StatelessWidget {
                 PopupMenuItem<int>(value: 6, child: Text('Details')),
                 PopupMenuItem<int>(value: 7, child: Text('Settings')),
                 PopupMenuItem<int>(value: 8, child: Text('Delete')),
+                PopupMenuItem<int>(value: 9, child: Text('Resize')),
+                PopupMenuItem<int>(value: 10, child: Text('Copy to')),
+                PopupMenuItem<int>(value: 11, child: Text('Move to')),
               ],
             ),
           ],

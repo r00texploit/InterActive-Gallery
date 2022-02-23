@@ -8,6 +8,7 @@ import 'menu/delete.dart';
 import 'menu/detail.dart';
 import 'menu/orientation.dart';
 import 'menu/rename.dart';
+import 'menu/resize.dart';
 import 'menu/setas.dart';
 import 'menu/slide.dart';
 
@@ -167,9 +168,9 @@ class DetailsPage extends StatelessWidget {
         break;
       case 7:
         //ReSize
-        /* Navigator.push(
+        Navigator.push(
             context,
-            MaterialPageRoute(builder: (context) => ReSizePage()),*/
+            MaterialPageRoute(builder: (context) => ReSizePage()));
         break;
       case 8:
       //rename

@@ -3,13 +3,19 @@
 import 'package:flutter/material.dart';
 import 'package:like_button/like_button.dart';
 
+import 'menu/copyto.dart';
+import 'menu/createshortcut.dart';
 import 'menu/crop.dart';
 import 'menu/delete.dart';
 import 'menu/detail.dart';
+import 'menu/moveto.dart';
+import 'menu/openwith.dart';
 import 'menu/orientation.dart';
+import 'menu/print.dart';
 import 'menu/rename.dart';
 import 'menu/resize.dart';
 import 'menu/setas.dart';
+import 'menu/settinngs.dart';
 import 'menu/slide.dart';
 
 class DetailsPage extends StatelessWidget {
@@ -90,8 +96,10 @@ class DetailsPage extends StatelessWidget {
                 PopupMenuItem<int>(value: 7, child: Text('Resize')),
                 PopupMenuItem<int>(value: 8, child: Text('Copy to')),
                 PopupMenuItem<int>(value: 9, child: Text('Move to')),
-                PopupMenuItem<int>(value: 10, child: Text('Copy to')),
-                PopupMenuItem<int>(value: 11, child: Text('Move to')),
+                PopupMenuItem<int>(value: 10, child: Text('Create Shortcut')),
+                PopupMenuItem<int>(value: 11, child: Text('Settings')),
+                PopupMenuItem<int>(value: 12, child: Text('Print')),
+                PopupMenuItem<int>(value: 13, child: Text('Open with')),
               ],
             ),
           ],
@@ -173,28 +181,40 @@ class DetailsPage extends StatelessWidget {
             MaterialPageRoute(builder: (context) => ReSizePage()));
         break;
       case 8:
-      //rename
-      /* Navigator.push(
+      //Copy to
+      Navigator.push(
             context,
-            MaterialPageRoute(builder: (context) => Page()),*/
+            MaterialPageRoute(builder: (context) => CopyToPage()));
         break;
       case 9:
-      //rename
-      /* Navigator.push(
+      //Move To
+      Navigator.push(
             context,
-            MaterialPageRoute(builder: (context) => CropPage()),*/
+            MaterialPageRoute(builder: (context) => MoveToPage()));
         break;
       case 10:
-      //rename
-      /* Navigator.push(
+      //Shortcut
+      Navigator.push(
             context,
-            MaterialPageRoute(builder: (context) => CropPage()),*/
+            MaterialPageRoute(builder: (context) => CreateShortCutPage()));
         break;
       case 11:
-      //rename
-      /* Navigator.push(
+      //Settings
+      Navigator.push(
             context,
-            MaterialPageRoute(builder: (context) => CropPage()),*/
+            MaterialPageRoute(builder: (context) => SettingsPage()));
+        break;
+      case 12:
+      //Print
+      Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => PrintPage()));
+        break;
+      case 13:
+      //Open With
+      Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => OpenWithPage()));
         break;
     }
   }
